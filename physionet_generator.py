@@ -4,6 +4,7 @@
 Physionet ECG classification
 
 @author: Rishabh Dev, Prayas Arora
+Capstone Project: Detection of Atrial Fibrillation 
 
 Batch generator class
 Modified from: https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly.html
