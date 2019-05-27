@@ -3,13 +3,13 @@
 """
 
 Physionet ECG classification
+Capstone Project: Detection of Atrial Fibrillation
 
 @author: Rishabh Dev, Prayas Arora
 
 This file just summarizes physionet_processing.ipynb
 
 """
-
 #%% Imports
 
 import numpy as np
@@ -121,7 +121,8 @@ def random_resample(signals, upscale_factor = 1):
 # Spectrogram statistics needed for normalization of the data set
 def transformed_stats(h5file, nperseg, noverlap, sequence_length):
 
-    ''' Gets some important statistics of the spectrograms in the entire dataset.
+
+''' Gets some important statistics of the spectrograms in the entire dataset.
     We need this to rescale the data'''
 
     dataset_list = list(h5file.keys())
@@ -143,6 +144,7 @@ def transformed_stats(h5file, nperseg, noverlap, sequence_length):
 def norm_float(data, data_mean, data_std):
     scaled = (data - data_mean)/data_std
     return scaled
+
 
 # Run as Script
 
