@@ -9,6 +9,7 @@ Batch generator class
 Modified from: https://stanford.edu/~shervine/blog/keras-how-to-generate-data-on-the-fly.html
 
 """
+
 #%% Imports
 
 import numpy as np
@@ -101,6 +102,7 @@ class DataGenerator(keras.utils.Sequence):
         return X
     
  
+
 
 # Run as Script
 
